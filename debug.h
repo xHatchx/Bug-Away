@@ -3,11 +3,14 @@
 class Debug
 {
 private:
-    int enabled;
+   int i_enabled;
+   std::string s_prefix;
 
 public:
-    Debug();
-    void Log(std::string msg);
-    void SetEnabled(int e);
+   Debug();
+   Debug(std::string prefix);
+   void Log(std::string msg);
+   void SetEnabled(int e);
+   void SetPrefix(std::string prefix);
 };
 #endif
