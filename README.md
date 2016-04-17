@@ -10,12 +10,12 @@ int main(int argc, char* argv[]) {
     if(argv[1]!=nullptr) { // If the first argument after the filename isn't a null pointer
         if(strcmp(argv[1],"--debug")) { // If the first argument after the filename is "--debug"
             d->SetEnabled(1); //Enable debugging
-            }
         }
-        d->Log("Program started successfully");
-        std::cout << "Hello, World!" << endl;
-        return 0;
     }
+    d->Log("Program started successfully");
+    std::cout << "Hello, World!" << endl;
+    return 0;
+}
 ```
 ### Output
 #### With ```--debug```
